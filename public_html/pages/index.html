@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta name="keywords" content="footer, address, phone, icons" />
+	<meta http-equiv="expires" content="0">
+
+    <title>SAP@JH</title>
+	
+			
+    <!-- jQuery -->	 
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="../dist/css/footer-distributed-with-address-and-phones.css">
+	<link rel="stylesheet" href="../dist/css/modal.css">
+	
+<!-- 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+
+	<link href="//fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	
+		<metacharset="utf-8">
+      <metahttp-equiv="X-UA-Compatible"content"IE=edge,chrome=1">
+      <title>hubWidget</title>
+      <meta name="viewport"content="width=device-width">
+	<link rel="stylesheet" href="//hub.jhu.edu/assets/shared/css/widget-light.4.1.0.css" />
+	
+	<style type="text/css">
+	
+	.righthand {
+		position:absolute;
+	 
+	}
+	
+	</style>
+	
+
+</head>
+
+<body>
+
+
+		<!-- Modal Screen  -->
+		<script>
+		$(document).on('hidden.bs.modal', function (e) {
+		var target = $(e.target);
+		target.removeData('bs.modal')
+		.find(".clearable-content").html('');
+		});
+		</script>
+		
+		<!-- Modal Screen divs for Notifications  -->
+		<!-- Finance -->
+		
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<p class="modal-title">Finance</p>
+				<?php include '../feed/finance.php';?>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+
+	
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<p class="modal-title">Human Resources </p>
+				<?php include '../feed/hr.php';?>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<p class="modal-title">Travel & Expenses </p>
+				<?php include '../feed/travel.php';?>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<p class="modal-title">Shopping-Cart </p>
+				<?php include '../feed/shopping.php';?>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<p class="modal-title">Purchasing News </p>
+				<?php include '../feed/purchasing.php';?>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<p class="modal-title">Security & Workflow </p>
+				<?php include '../feed/security.php';?>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<p class="modal-title">Business Warehouse (BW)/ Analysis </p>
+				<?php include '../feed/business.php';?>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<p class="modal-title">User Experience </p>
+				<?php include '../feed/user_experience.php';?>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="myModal" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" onclick= "cancelfunction()" data-dismiss="modal">&times;</button>
+				<p class="modal-title"><b>Customize Notifications</b></p>
+				<fieldset id="message" class="checks">
+									<input type="checkbox" id= "cb_1">
+									<label for="cb_1">Business Warehouse (BW) / Analysis</label>
+									</br>
+									<input type="checkbox" id= "cb_2">
+									<label for="cb_2">Finance</label>
+									</br>
+									<input type="checkbox" id= "cb_3">
+									<label for="cb_3">Human Resources</label>
+									</br>
+									<input type="checkbox" id= "cb_4">
+									<label for="cb_4">Purchasing News</label>
+									</br>
+									<input type="checkbox" id= "cb_5">
+									<label for="cb_5">Shopping Carts</label>
+									</br>
+									<input type="checkbox" id= "cb_6">
+									<label for="cb_6">Travel & Expenses</label>
+									</br>
+									<input type="checkbox" id= "cb_7">
+									<label for="cb_7">User Experience</label>
+									</br>
+									<input type="checkbox" id= "cb_8">
+									<label for="cb_8">Security & Workflow</label>
+								</fieldset>
+				</div>
+				<div class="modal-footer">
+					<button id="update_module" type="button" class="btn btn-primary" onclick= "update_module_function()"><b>Update</b></button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick= "cancelfunction()"><b>Close</b></button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="myModal" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" onclick= "cancelfunction()" data-dismiss="modal">&times;</button>
+				<p class="modal-title">Customize Widgets </p>
+				<fieldset id="message" class="checks">
+					<input type="checkbox" id= "cb_1_hide">
+					<label for="cb_1_hide">Hide Weather</label>
+					</br>
+					<input type="checkbox" id= "cb_2_hide">
+					<label for="cb_2_hide">Hide HUB News</label>
+					</br>
+								
+				</fieldset>
+				</div>
+				<div class="modal-footer">
+					<button id="update" type="button" class="btn btn-primary" onclick= "updatefunction()"><b>Update</b></button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick= "cancelfunction()"><b>Close</b></button>
+				</div>
+			</div>
+		</div>
+
+
+			<div id="myModal" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<p class="modal-title">Sign up for the email groups using Outlook.</p>
+				<fieldset id="message" class = "checks">
+									<input type="checkbox" id= "cb_9">
+									<label for="cb_9">Business Warehouse (BW) / Analysis</label>
+									</br>
+									<input type="checkbox" id= "cb_10">
+									<label for="cb_10">Finance</label>
+									</br>
+									<input type="checkbox" id= "cb_11">
+									<label for="cb_11">Human Resources</label>
+									</br>
+									<input type="checkbox" id= "cb_12">
+									<label for="cb_12">Purchasing News</label>
+									</br>
+									<input type="checkbox" id= "cb_13">
+									<label for="cb_13">Shopping Carts</label>
+									</br>
+									<input type="checkbox" id= "cb_14">
+									<label for="cb_14">Travel & Expenses</label>
+									</br>
+									<input type="checkbox" id= "cb_15">
+									<label for="cb_15">User Experience</label>
+									</br>
+									<input type="checkbox" id= "cb_16">
+									<label for="cb_16">Security & Workflow</label>
+				</fieldset>
+				
+		
+				</div>
+				<div class="modal-footer">
+					<button id="Signup" type="button" class="btn btn-primary" onclick= "SignupGroup()"><b>Sign Up</b></button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal"><b>Close</b></button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="myModal" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<p class="modal-title">What's your Question?</p> </br>
+				&nbsp;&nbsp;&nbsp;
+				<textarea rows ="2" cols = "40"  name="subject_email" id="subject"  onfocus="if(this.value==this.defaultValue)this.value='';" 
+                  onblur="if(this.value=='')this.value=this.defaultValue;">Subject</textarea></br></br>
+			
+					&nbsp;&nbsp;&nbsp;
+					
+				  <textarea rows ="7" cols = "70" name="ques" id="question" onfocus="if(this.value==this.defaultValue)this.value='';" 
+                  onblur="if(this.value=='')this.value=this.defaultValue;">Enter your Question?</textarea> </br> </br>
+				  
+				  <p><b> &nbsp; &nbsp; &nbsp; Choose a relevant group for your Question </b></p>
+				  
+				  <div id= "group_selection" >
+				     &nbsp; &nbsp; &nbsp; 
+					 <input type="radio" name = "group_types" id="finance_group">
+						<label for="finance_group"> Finance </label> </br>
+						&nbsp; &nbsp; &nbsp; 
+						<input type="radio" name= "group_types" id="hr_group">
+						<label for="hr_group"> Human Resources </label>	</br>
+						&nbsp; &nbsp; &nbsp; 
+						<input type="radio" name= "group_types" id="supply_group">
+						<label for="supply_group"> Supply Chain </label> </br>			
+				  </div>
+				</div>
+				<div class="modal-footer">
+					<button id="query" type="button" class="btn btn-primary" onclick= "queryfunction()"><b>Send</b></button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal"><b>Close</b></button>
+				</div>
+			</div>
+		</div>
+
+		
+		
+	        <!-- Save user notification settings -->	
+	<script>
+    function queryfunction() {
+		var fg =  document.getElementById("finance_group");
+		var hg = document.getElementById("hr_group");
+       var sg = document.getElementById("supply_group");
+	   
+	var message = "Enter your Question?"
+	var message1 = "Subject"
+	
+	var question_to_email = document.getElementById("question").value;
+	var subject_to_email = document.getElementById("subject").value;
+	
+	if((document.getElementById("question").value == "") || (document.getElementById("question").value !== message && document.getElementById("question").value == "") || (document.getElementById("question").value == message))
+		{
+			alert ('Please enter the Question');
+			return false;
+		}
+	 
+	if((document.getElementById("subject").value == "") || (document.getElementById("subject").value !== message && document.getElementById("subject").value == "") || (document.getElementById("subject").value == message1))
+		{
+			alert ('Please enter the subject');
+			return false;
+		}
+
+	if ( ( fg.checked == false ) && ( hg.checked == false )&& ( sg.checked == false )) 
+	{
+		alert ( "Please choose a relevant group." ); 
+		return false;
+	}
+	
+	if(fg.checked == true){
+							alert ( "Please subscribe to the finance group to get latest updates." ); 
+							var link = "mailto:ebs_ux_finance@lists.johnshopkins.edu"
+							+ "&subject=" + escape(subject_to_email)
+							+ "&body=" + escape(question_to_email);
+							
+
+							window.location.href = link; 
+		
+	}
+	
+	if(hg.checked == true){
+		
+							alert ( "Please subscribe to the HR group to get latest updates." );
+							var link = "mailto:ebs_ux_hr@lists.johnshopkins.edu"
+							+ "&subject=" + escape(subject_to_email)
+							+ "&body=" + escape(question_to_email);
+							
+
+							window.location.href = link; 
+		
+	}
+	
+	if(sg.checked == true){
+		
+							alert ( "Please subscribe to the Supply Chain group to get latest updates." );
+							var link = "mailto:ebs_ux_supply_chain@lists.johnshopkins.edu"
+							+ "&subject=" + escape(subject_to_email)
+							+ "&body=" + escape(question_to_email);
+							
+
+							window.location.href = link; 
+		
+	}
+	
+							
+								
+		
+	}
+	
+	
+	
+	
+	function SignupGroup(){
+							var cb_9 =  document.getElementById("cb_9");
+							var cb_10 = document.getElementById("cb_10");
+							var cb_11 = document.getElementById("cb_11");
+							var cb_12 = document.getElementById("cb_12");
+							var cb_13 = document.getElementById("cb_13");
+							var cb_14 = document.getElementById("cb_14");
+							var cb_15 = document.getElementById("cb_15");
+							var cb_16 = document.getElementById("cb_16"); 
+							
+							if((cb_9.checked == false) && (cb_10.checked == false) && (cb_11.checked == false)&& (cb_12.checked == false) && 
+							(cb_13.checked == false) && (cb_14.checked == false) && (cb_15.checked == false) && (cb_16.checked == false))
+							{
+							 alert("Please select atleast one group");
+							}
+							
+							else
+							{
+							 
+								var grouparray = [];
+		
+							
+			
+								if(cb_9.checked)
+												{
+													grouparray.push( "Business Warehouse");
+												
+												}
+								if(cb_10.checked)
+												{
+													grouparray.push("Finance");
+												
+												}
+								if(cb_11.checked)
+												{
+													grouparray.push("Human Resources");
+												
+												}
+								if(cb_12.checked)
+												{
+													grouparray.push("Purchasing News");
+												
+												}
+								if(cb_13.checked)
+												{
+													grouparray.push("Shopping Cart");
+												}
+								if(cb_14.checked)
+												{
+													grouparray.push("Travel Expense");
+												
+												}
+								if(cb_15.checked)
+												{
+													grouparray.push("User Experience");
+												
+												}
+								if(cb_16.checked)
+												{
+													grouparray.push("Security Workflow");
+												
+												}
+								
+						var link = "mailto:khaggar1@jhmi.edu"
+							+ "&subject=" + escape("Request for Group Signup")
+							+ "&body=" + escape(" Please add me to the following groups- \n \n" + grouparray + "\n \n Thanks.");
+							
+
+							window.location.href = link; 
+								
+                           }
+							
+		
+								
+							
+						
+
+	}
+	
+
+	function cancelfunction() {
+		window.location.reload();
+		}
+	
+										
+									
+    function updatefunction() {		
+							var cb_1_hide = document.getElementById("cb_1_hide");
+							var cb_2_hide = document.getElementById("cb_2_hide");
+							
+							if(cb_1_hide.checked)
+							{
+								localStorage.setItem('hide_category1', 'none');	
+							
+							}
+							else
+							{
+								localStorage.setItem('hide_category1', '');
+							}
+							if(cb_2_hide.checked)
+							{
+								localStorage.setItem('hide_category2', 'none');	
+							
+							}
+							else
+							{
+								localStorage.setItem('hide_category2', '');
+							}
+							
+							alert(" Widget preferences have been saved");
+
+							}
+									
+	function update_module_function() {		
+							var cb_1 = document.getElementById("cb_1");
+							var cb_2 = document.getElementById("cb_2");
+							var cb_3 = document.getElementById("cb_3");
+							var cb_4 = document.getElementById("cb_4");
+							var cb_5 = document.getElementById("cb_5");
+							var cb_6 = document.getElementById("cb_6");
+							var cb_7 = document.getElementById("cb_7");
+							var cb_8 = document.getElementById("cb_8");
+							
+							if(cb_1.checked)
+							{
+								localStorage.setItem('category1', 'business');	
+							
+							}
+							else
+							{
+								localStorage.setItem('category1', 'none');
+							}
+							if(cb_2.checked)
+							{
+								localStorage.setItem('category2', 'finance');	
+							
+							}
+							else
+							{
+								localStorage.setItem('category2', 'none');
+							}
+							if(cb_3.checked)
+							{
+								localStorage.setItem('category3', 'hr');	
+							
+							}
+							else
+							{
+								localStorage.setItem('category3', 'none');
+							}
+							if(cb_4.checked)
+							{
+								localStorage.setItem('category4', 'purchasing');	
+							
+							}
+							else
+							{
+								localStorage.setItem('category4', 'none');
+							}
+							if(cb_5.checked)
+							{
+								localStorage.setItem('category5', 'shopping');	
+							
+							}
+							else
+							{
+								localStorage.setItem('category5', 'none');
+							}
+							if(cb_6.checked)
+							{
+								localStorage.setItem('category6', 'travel');	
+							
+							}
+							else
+							{
+								localStorage.setItem('category6', 'none');
+							}
+							if(cb_7.checked)
+							{
+								localStorage.setItem('category7', 'ux');	
+							
+							}
+							else
+							{
+								localStorage.setItem('category7', 'none');
+							}
+							if(cb_8.checked)
+							{
+								localStorage.setItem('category8', 'security');	
+							
+							}
+							else
+							{
+								localStorage.setItem('category8', 'none');
+							}
+							
+							alert("Notification preferences have been saved");
+
+							}
+							
+							
+							
+							
+							
+							var cb_1_hide = document.getElementById('cb_1_hide')
+							var cb_2_hide = document.getElementById('cb_2_hide')
+							
+							var cb_1 = document.getElementById("cb_1");
+							var cb_2 = document.getElementById("cb_2");
+							var cb_3 = document.getElementById("cb_3");
+							var cb_4 = document.getElementById("cb_4");
+							var cb_5 = document.getElementById("cb_5");
+							var cb_6 = document.getElementById("cb_6");
+							var cb_7 = document.getElementById("cb_7");
+							var cb_8 = document.getElementById("cb_8");
+							
+							
+							if(localStorage.getItem('hide_category1') === 'none'){
+							cb_1_hide.checked = true;
+							}
+							if(localStorage.getItem('hide_category2') === 'none'){
+							cb_2_hide.checked = true;
+							}
+							if(localStorage.getItem('category1') === 'business'){
+							cb_1.checked = true;
+							}
+							if(localStorage.getItem('category2') === 'finance'){
+							cb_2.checked = true;
+							}
+							if(localStorage.getItem('category3') === 'hr'){
+							cb_3.checked = true;
+							}
+							if(localStorage.getItem('category4') === 'purchasing'){
+							cb_4.checked = true;
+							}
+							if(localStorage.getItem('category5') === 'shopping'){
+							cb_5.checked = true;
+							}
+							if(localStorage.getItem('category6') === 'travel'){
+							cb_6.checked = true;
+							}
+							if(localStorage.getItem('category7') === 'ux'){
+							cb_7.checked = true;
+							}
+							if(localStorage.getItem('category8') === 'security'){
+							cb_8.checked = true;
+							}
+							
+							
+							
+							
+							
+							if(localStorage.getItem('category1') === 'none'){
+								var x = document.getElementById('business');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+								
+							}
+					
+							
+							if(localStorage.getItem('category2') === 'none'){
+								var x = document.getElementById('finance');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+							}
+							
+							if(localStorage.getItem('category3') === 'none'){
+								var x = document.getElementById('hr');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+								
+							}
+					
+							
+							if(localStorage.getItem('category4') === 'none'){
+								var x = document.getElementById('purchasing');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+							}
+							
+							if(localStorage.getItem('category5') === 'none'){
+								var x = document.getElementById('shopping');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+								
+							}
+					
+							
+							if(localStorage.getItem('category6') === 'none'){
+								var x = document.getElementById('travel');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+							}
+							
+							if(localStorage.getItem('category7') === 'none'){
+								var x = document.getElementById('ux');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+								
+							}
+					
+							
+							if(localStorage.getItem('category8') === 'none'){
+								var x = document.getElementById('security');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+							}
+	
+	</script>
+	
+	
+
+	
+	
+	
+        
+	    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>			
+            </div>
+            <!-- /.navbar-header -->
+			
+			
+
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+				
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <b>Connect with JH Employees</b> <i class="fa fa-caret-down"></i>
+                    </a>
+                   <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a data-toggle="modal" href='#' data-target="#myModal">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> <b>Signup for Mailing Group</b>
+												
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a data-toggle="modal" href='#' data-target="#myModal">
+                                <div>
+                                    <i class="fa fa-user fa-fw"></i> <b>Ask a Question</b>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <div id = "finance">
+						<li>
+                            <a data-toggle="modal" href='#' data-target="#myModal">
+                             
+                                    <i class="fa fa-dollar fa-fw"></i> <b>Finance</b>
+                             
+                            </a>
+							
+                        </li>
+						<li class="divider"></li>
+						</div>   
+						
+						<div id = "hr">
+                        <li>
+                            <a data-toggle="modal" href='#' data-target="#myModal">
+                             
+                                    <i class="fa fa-user fa-fw"></i> <b>Human Resources</b> 
+                            </a>
+                        </li>
+						<li class="divider"></li>
+						</div>
+						
+                        <div id = "travel">
+                        <li>
+                            <a data-toggle="modal" href='#' data-target="#myModal">
+                               
+                                    <i class="fa fa-plane fa-fw"></i> <b>Travel & Expenses</b>
+                                
+                            </a>
+                        </li>
+						<li class="divider"></li>
+						</div> 
+						
+                        <div id = "shopping">
+                        <li>
+                            <a data-toggle="modal" href='#' data-target="#myModal">
+                                
+                                    <i class="fa fa-shopping-cart fa-fw"></i> <b>Shopping Carts</b>
+                                
+                            </a>
+                        </li>
+						<li class="divider"></li>
+						</div>
+						
+                        <div id = "purchasing">
+                        <li>
+                            <a data-toggle="modal" href='#' data-target="#myModal">
+                                
+                                    <i class="fa fa-credit-card fa-fw"></i> <b>Purchasing News</b>
+                                
+                            </a>
+                        </li>
+						<li class="divider"></li>
+						</div>
+						
+						<div id = "security">
+                        <li>
+                            <a data-toggle="modal" href='#' data-target="#myModal">
+                                
+                                    <i class="fa fa-lock fa-fw"></i> <b>Security & Workflow</b>
+                                
+                            </a>
+                        </li>
+						<li class="divider"></li>
+						</div>
+						
+						<div id = "business">
+                        <li>
+                            <a data-toggle="modal" href='#' data-target="#myModal">
+                                
+                                    <i class="fa fa-bar-chart-o fa-fw"></i> <b>Business Warehouse(BW)/Analysis</b>
+                                
+                            </a>
+                        </li>
+						<li class="divider"></li>
+						</div>
+						
+						<div id = "ux">
+                        <li>
+                            <a data-toggle="modal" href='#' data-target="#myModal">
+                                
+                                    <i class="fa fa-laptop fa-fw"></i> <b>User Experience</b>
+                                
+                            </a>
+                        </li>
+						<li class="divider"></li>
+						</div>
+						
+                        
+                        
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a data-toggle="modal" href='#' data-target="#myModal"><i class="fa fa-bell-o fa-fw"></i><b> Customize Notifications</b></a>
+                        </li>
+						<li class="divider"></li>
+                        <li><a data-toggle="modal" href="#"data-target="#myModal"><i class="fa fa-gear fa-fw"></i><b> Customize Widgets </b></a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" id= "textinto" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button onclick= "mytextinto()" class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+								
+								
+								
+								<script>
+							
+									function mytextinto() {
+									var x = document.getElementById("textinto").value;
+									window.open('http://www.sapathopkins.org/?s=' + x, '_blank');
+								
+									}
+									
+									document.getElementById('textinto').addEventListener('keypress', function(event) {
+										if (event.keyCode == 13) {
+										var x = document.getElementById("textinto").value;
+										window.open('http://www.sapathopkins.org/?s=' + x, '_blank');	
+										}
+									});
+									
+								</script>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-link"></i> Quick Links<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="http://www.sapathopkins.org/contact/" target="_blank"><i class="fa fa-question-circle fa-fw"></i> How do I?</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.sapathopkins.org/sap-security-and-workflow/" target="_blank"><i class="fa fa-lock fa-fw"></i> Security and Workflow</a>
+                                </li>
+								<li>
+                                    <a href="http://www.sapathopkins.org/desktop-support/" target="_blank"><i class="fa fa-laptop fa-fw"></i> Desktop Support</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+         
+                        <li>
+                            <a href="#"><i class="fa fa-film fa-fw"></i> Video Tutorials<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+							
+                                <li>
+                                    <a href="#"><i>SAP Basic Navigation</i><span class="fa arrow"></span></a>
+									<ul class="nav nav-third-level">
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2013/12/sap_navigation_ECC_1.mp4" target="_blank">How to Access SAP</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2013/12/sap_navigation_ECC_2.mp4" target="_blank">Inside the SAP Easy Access Screen</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2013/12/sap_navigation_ECC_3.mp4" target="_blank">Navigation in an ECC Transaction</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2013/12/Navigation-for-Shopping-Carts.mp4" target="_blank">Navigation for Shopping Carts</a>
+										</li>
+									
+									</ul>
+                                </li>
+                                <li>
+                                     <a href="#"><i>Shopping Cart</i><span class="fa arrow"></span></a>
+									<ul class="nav nav-third-level">
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2013/12/Shopping-Cart-Default-Settings.mp4" target="_blank">Shopping Cart Initial Settings</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/01/Vendor-Search-in-Shopping-Cart.mp4" target="_blank">Vendor Search</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/01/Shopping-Cart-Status.mp4" target="_blank">Check Shopping Cart Status</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/2015/08/how-to-look-up-the-status-of-shopping-carts-using-zsc1_video/" target="_blank">How to look up the status of shopping carts using ZSC1</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/01/Review-Approval-on-Cart.mp4" target="_blank">Shopping Cart Approvals</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2013/12/Entering-Receipts-by-Shopping-Cart-Initiator.mp4" target="_blank">Recording Goods Receipt by Shopping Cart Initiator</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/03/Hosted-Catalog-Searches-and-Shopping-Lists.mp4" target="_blank">Searching the Hosted Catalog and Using Shopping Lists</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/03/How-to-Initiate-a-Free-Text-Shopping-Cart_fin.mp4" target="_blank">Free Text Shopping Cart – How to Initiate</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/05/Review-Vendor-Payment-Status.mp4" target="_blank">Review Vendor Payment Status</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/07/Blanket-Shopping-Cart.mp4" target="_blank">Create Blanket Shopping Cart</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/07/Create-PROJ-Shopping-Cart.mp4" target="_blank">Create Capital and Project Shopping Cart</a>
+										</li>
+										
+									
+									</ul>
+                                </li>
+								 <li>
+                                    <a href="#"><i>Purchase Orders</i><span class="fa arrow"></span></a>
+									<ul class="nav nav-third-level">
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/05/Purchase-Order-History-Goods-Receipt-and-Invoice-postings.mp4" target="_blank">Purchase Order History – Look up Goods Receipt and Invoices</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/06/Resolving-a-Blocked-Invoice.mp4" target="_blank">Resolving Blocked Invoices</a>
+										</li>
+						
+									</ul>
+                                </li>
+								 <li>
+                                     <a href="#"><i>Inventory</i><span class="fa arrow"></span></a>
+									<ul class="nav nav-third-level">
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/05/RETURN-TO-vendor.mp4" target="_blank">Return Goods to a Vendor (for Direct Material Purchases)</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/05/Material-Usage-Report.mp4" target="_blank">Material Usage Report</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/sap-tutorials/inventory-management-at-jhh-requires-jhed-login/" target="_blank">Inventory Management at JHH (requires JHED Login)</a>
+										</li>
+						
+									</ul>
+                                </li>
+								 <li>
+                                    <a href="#"><i>Online Payment Request</i><span class="fa arrow"></span></a>
+									<ul class="nav nav-third-level">
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/04/Attaching-Documents-in-Online-Payment.mp4" target="_blank">Attaching Documents in Online Payment</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2013/12/Online-Payment-Initial-Settings.mp4" target="_blank">Initial Settings for Online Payment </a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2013/12/Vendor-Search-for-Online-Payment.mp4" target="_blank">Vendor Search for Online Payment</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2013/12/Online-Payment-Request-Viewing-Approvals.mp4" target="_blank">Reviewing the Approval Workflow for Online Payment Documents</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/05/Review-Vendor-Payment-Status.mp4" target="_blank">Review Vendor Payment Status</a>
+										</li>
+									
+									</ul>
+                                </li>
+								<li>
+                                    <a href="#"><i>Employee Reimbursements (Travel)</i><span class="fa arrow"></span></a>
+									<ul class="nav nav-third-level">
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/03/Travel-Reimbursement-Status.mp4" target="_blank">Status of Employee Reimbursement</a>
+										</li>
+		
+									</ul>
+                                </li>
+								<li>
+                                     <a href="#"><i>Browser Settings</i><span class="fa arrow"></span></a>
+									<ul class="nav nav-third-level">
+										<li>
+											<a href="http://www.sapathopkins.org/sap-tutorials/ie-pop-up-blocker-settings/" target="_blank">IE Pop-up Blocker Settings</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/sap-tutorials/ie-security-settings/" target="_blank">IE Security Settings</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/sap-tutorials/ie-compatiblity-view-message-pop-ups/" target="_blank">IE Compatiblity View & Message Pop-ups</a>
+										</li>
+						
+									</ul>
+                                </li>
+								<li>
+                                     <a href="#"><i>For Testers</i><span class="fa arrow"></span></a>
+									<ul class="nav nav-third-level">
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/07/Instant-Test.mp4" target="_blank">Record scripts AND test results</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/07/Accelerated-Testing.mp4" target="_blank">Accelerated Testing</a>
+										</li>
+										<li>
+											<a href="http://www.sapathopkins.org/wp-content/uploads//2014/07/CrossBrowserTesting.mp4" target="_blank">Cross Browser Testing</a>
+										</li>
+						
+									</ul>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-file-o fa-fw"></i> Resources<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="http://finance.jhu.edu/reports_guides/analysis/training/job_aids.html" target="_blank">Analysis Job Aids</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.hopkinsmedicine.org/finance" target="_blank">Health System Finance</a>
+                                </li>
+                                <li>
+                                    <a href="http://intranet.insidehopkinsmedicine.org/human_resources/sap" target="_blank">Health System Training</a>
+                                </li>
+								<li>
+                                    <a href="http://hopkinsfastfacts.org/" target="_blank">Johns Hopkins Fast Facts</a>
+                                </li>
+                                <li>
+                                    <a href="http://intranet.insidehopkinsmedicine.org/human_resources/sap/job_aids.html" target="_blank">SAP Job Aids</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.sapathopkins.org/sap-maintenance-schedule/" target="_blank">SAP Maintenance Schedule</a>
+                                </li>
+								<li>
+                                    <a href="http://intranet.insidehopkinsmedicine.org/human_resources/sap/user_guides.html" target="_blank">SAP User Guides</a>
+                                </li>
+                                <li>
+                                    <a href="http://ssc.jhmi.edu/index.html" target="_blank">Shared Services at Johns Hopkins</a>
+                                </li>
+                                <li>
+                                    <a href="http://ssc.jhmi.edu/supplychain/training/index.html" target="_blank">Shopping Cart and Purchase Orders Instructions</a>
+                                </li>
+								<li>
+                                    <a href="http://finance.jhu.edu/" target="_blank">University Finance</a>
+                                </li>
+                                <li>
+                                    <a href="http://tmod.jhu.edu/" target="_blank">University Training</a>
+                                </li>
+
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+						<li>
+                            <a href="#"><i class="fa fa-briefcase fa-fw"></i> Finance Master Data<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+								<li>
+                                    <a href="http://www.sapathopkins.org/fi-master-data-maintenance-request-forms/" target="_blank">Request Master Data</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.sapathopkins.org/master-data-lists/" target="_blank">Master Data Lists</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.sapathopkins.org/3771-2/" target="_blank">FI and MD Upload Templates</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-tablet fa-fw"></i><b> OPEN </b><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+								<li>
+                                    <a href="http://www.sapathopkins.org/about-sap-fiori-at-johns-hopkins/" target="_blank">About SAP Fiori at Johns Hopkins</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.sapathopkins.org/my-timesheet/" target="_blank">My Timesheet</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.sapathopkins.org/security-workflow-launchpad/" target="_blank">Security and Worflow Launchpad</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+						<li>
+                            <a href="#"><i class="fa fa-question-circle fa-fw"></i> Feedback<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="https://prodsupport.isis.jhu.edu/SAPFeedback/" target="_blank"><i class="fa fa-question-circle fa-fw"></i> Give Feedback</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+				</br>
+                <div class="row">
+                    <div class="col-lg-12">
+					
+					
+					<div class="col-lg-6">
+					
+					<div id = "item1">
+					
+					<div class="panel panel-default">
+					<div class="panel-heading">
+						<b> SAP Announcements </b>
+					</div>
+					<!-- /.panel-heading -->
+					<div class="panel-body">	
+				<p> <b><i> Welcome to the Johns Hopkins SAP Portal </i></b> </p>	
+
+				<?php include '../feed/downtime.php';?>
+
+				<a href="https://orchid.hosts.jhmi.edu/hopkinsone/welcome/gettingstarted_arch.cfm" target="_blank">Archived Messages</a>
+
+				</div>
+
+				 </div>
+						  <!-- /.panel -->
+				</div>
+				   
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<b> SAP Aware </b>
+					</div>
+					<!-- /.panel-heading -->
+					<div class="panel-body">	
+				<p> <b><i> Welcome to the Johns Hopkins SAP Portal </i></b> </p>	
+
+				<?php include '../feed/announce.php';?>
+
+				<a href="https://orchid.hosts.jhmi.edu/hopkinsone/welcome/gettingstarted_arch.cfm" target="_blank">Archived Messages</a>
+
+				</div>
+
+				 </div>   
+					
+					
+					
+					
+					
+					
+					
+					
+					</div>
+					
+				
+					
+					
+					
+					<div class="col-lg-6">
+						
+					<div id = "weatheritem">
+					
+					<div class="panel panel-default">
+					<div class="panel-heading">
+					<b> Weather</b>
+					
+					</div>
+					
+					
+					<!-- /.panel-heading -->
+					<div class="panel-body">
+					
+					<div class="col-lg-3">
+					</div>
+					
+					<iframe src="https://www.meteoblue.com/en/weather/widget/daily?geoloc=detect&days=4&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&uv=0&humidity=0&precipitation=0&precipitationprobability=0&spot=0&pressure=0&layout=light"
+					frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups"
+					style="width: 220px;height: 250px">
+					</iframe><div><!-- DO NOT REMOVE THIS LINK -->
+					<a href="https://www.meteoblue.com/en/weather/forecast/week?utm_source=weather_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" 
+					target="_blank"></a></div>
+					
+					</div>
+					<!-- /.panel-body -->
+					</div>
+					
+					
+					</div>
+				
+					<div id = "hubitem">
+					
+					<div class="panel panel-default">
+					<div class="panel-heading">
+					<b> HUB News</b>
+					
+					</div>
+					
+						<!-- /.panel-heading -->
+						<div class="panel-body">
+						<!-- We entered the code here to embed the news thingy! 
+							<div class="hub-widget" data-version=1 data-key=3429d428c1011f9d64e8eff1f3c6642b6299f037 data-count= "7"></div>
+							<script type='text/javascript' src='../js/hub.js'></script> -->
+							
+<?php
+$url="https://api.hub.jhu.edu/articles?v=1&key=3429d428c1011f9d64e8eff1f3c6642b6299f037";
+//  Initiate curl
+
+
+$result = file_get_contents($url);
+// Will dump a beauty json :3
+$array_u = json_decode($result, true);
+
+function readable_date($timestamp)
+{
+	echo date("F j, Y, g:i a", $timestamp);
+}
+
+
+
+$headline_0 = $array_u["_embedded"]["articles"][0]["headline"];
+$url_0=$array_u["_embedded"]["articles"][0]["url"];
+echo "<a href= $url_0 target= _blank>$headline_0</a></br>";
+readable_date ($array_u["_embedded"]["articles"][0]["publish_date"]);
+
+
+
+$headline_0 = $array_u["_embedded"]["articles"][1]["headline"];
+$url_0=$array_u["_embedded"]["articles"][1]["url"];
+echo "</br></br><a href= $url_0 target= _blank>$headline_0</a></br>";
+readable_date ($array_u["_embedded"]["articles"][1]["publish_date"]);
+
+
+
+$headline_0 = $array_u["_embedded"]["articles"][2]["headline"];
+$url_0=$array_u["_embedded"]["articles"][2]["url"];
+echo "</br></br><a href= $url_0 target= _blank>$headline_0</a></br>";
+readable_date ($array_u["_embedded"]["articles"][2]["publish_date"]);
+
+
+
+$headline_0 = $array_u["_embedded"]["articles"][3]["headline"];
+$url_0=$array_u["_embedded"]["articles"][3]["url"];
+echo "</br></br><a href= $url_0 target= _blank>$headline_0</a></br>";
+readable_date ($array_u["_embedded"]["articles"][3]["publish_date"]);
+
+						?>
+							
+							
+					  	
+						</div>
+						<!-- /.panel-body -->	
+						</div>
+						
+					</div>
+					
+					<script> 
+							
+							if(localStorage.getItem('hide_category1') === 'none'){
+								var x = document.getElementById('weatheritem');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+								
+							}
+					
+							
+							if(localStorage.getItem('hide_category2') === 'none'){
+								var x = document.getElementById('hubitem');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+							}
+							
+							if(localStorage.getItem('category1') === 'none'){
+								var x = document.getElementById('business');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+								
+							}
+					
+							
+							if(localStorage.getItem('category2') === 'none'){
+								var x = document.getElementById('finance');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+							}
+							
+							if(localStorage.getItem('category3') === 'none'){
+								var x = document.getElementById('hr');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+								
+							}
+					
+							
+							if(localStorage.getItem('category4') === 'none'){
+								var x = document.getElementById('purchasing');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+							}
+							
+							if(localStorage.getItem('category5') === 'none'){
+								var x = document.getElementById('shopping');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+								
+							}
+					
+							
+							if(localStorage.getItem('category6') === 'none'){
+								var x = document.getElementById('travel');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+							}
+							
+							if(localStorage.getItem('category7') === 'none'){
+								var x = document.getElementById('ux');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+								
+							}
+					
+							
+							if(localStorage.getItem('category8') === 'none'){
+								var x = document.getElementById('security');
+								if (x.style.display === 'none') {
+									x.style.display = 'block';
+								} else {
+									x.style.display = 'none';
+								}
+							}
+							
+					</script>
+						
+					</div>
+
+					
+					
+					
+					
+                </div>
+                <!-- /.row -->
+				
+				
+				
+				
+            </div>
+            <!-- /.container-fluid -->
+			
+			
+			
+        </div>
+        <!-- /#page-wrapper -->		
+
+		
+		
+    </div>
+	
+	
+	<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+
+				<p class="footer-links">
+					<a href="http://www.sapathopkins.org/sap-tutorials/" target="_blank"><i class="fa fa-film fa-fw"></i>  Video Tutorials</a>
+					</br>
+					<a href="http://intranet.insidehopkinsmedicine.org/human_resources/sap/job_aids.html" target="_blank"><i class="fa fa-info-circle fa-fw"></i>  Job Aids</a>
+					</br>
+					<a href="#item1"><i class="fa fa-arrow-up fa-fw"></i>Go to top</a>
+				</p>
+			
+				<p class="footer-company-name">
+				<a href="http://www.sapathopkins.org/" target="_blank">
+				&copy; 2017 SAP at Johns Hopkins</a></p>
+			</div>
+
+			<div class="footer-center">
+				
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="https://itservices.johnshopkins.edu/serviceportal" target="_blank">Self-Service Tickets</a></p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>(410)735-4357/HELP</p>
+				</div>
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About us</span>
+					SAP at Johns Hopkins provides the latest news, system announcements, tips and tricks, and other timely and relevant information on the Johns Hopkins SAP system.
+				<a href="http://www.sapathopkins.org/about/" target="_blank"><u>more</u></a>
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/johnshopkinsuniversity/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/sapatjh" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/company/johns-hopkins-university" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.instagram.com/johnshopkinsu/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+		
+	
+
+    <!-- /#wrapper -->
+	
+</body>
+
+</html>
+
+

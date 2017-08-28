@@ -1,0 +1,26 @@
+.modal-title {
+  text-align:center;
+  font-size:20px;
+  font-weight:bold;
+}
+@media screen and (min-width: 768px){
+  #myModal .modal-dialog {
+    webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+#myModal .modal-header {
+  border-radius: 5px 5px 0 0;
+  background-color:#fff;
+}
+#myModal .modal-content {
+  background-color:#fff;
+  border-radius: 0;
+  padding:20px;
+  box-shadow: none;
+  background-clip:inherit;
+}
+#myModal .modal-footer {
+  background-color:#fff;
+  border-radius: 0 0 5px 5px;
+}​
